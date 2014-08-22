@@ -89,6 +89,8 @@ class BartThread3 implements Runnable
 				
 				
 				
+				
+				
 				//System.out.print("Type GET for a quote or BYE to exit: ");
 				//localInput = sc.nextLine();
 				
