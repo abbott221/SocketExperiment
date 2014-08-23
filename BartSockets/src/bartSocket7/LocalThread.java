@@ -3,16 +3,28 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Lib.MessageGet;
+import Lib.MessageObject;
+
 
 public class LocalThread implements Runnable
 {
 	Scanner in;
 	PrintWriter out;
 	
+	
+	ArrayList<MessageObject> messages;
+	
+	
 	public LocalThread() {
 		in = new Scanner(System.in);
 		//out = new PrintWriter(s.getOutputStream(), true);
 		out = new PrintWriter(System.out, true);
+		
+		
+		
+		messages = new ArrayList();
+		messages.add( new MessageGet() );
 	}
 	
 	@Override
